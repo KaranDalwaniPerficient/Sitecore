@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Style/style.css">
+  <!-- <link rel="stylesheet" href="Style/style.css"> -->
   <link rel="stylesheet" href="SCSS/main.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -32,9 +32,9 @@
 
     <nav class="back_col m_nav">
       <div class="mobile_nav flex">
-      <ul class="nav_tab nav2">
-        <li><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
-      </ul>
+        <ul class="nav_tab nav2">
+          <li><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+        </ul>
         <img src="Asset/image.png" alt="logo" class="logo">
         <a href="#" class="white"><i class="fas fa-search"></i></a>
         <a href="#" class="white"> <i class="fas fa-bars"></i></a>
@@ -72,9 +72,15 @@
           </div>
         </div>
         <div class="quantity col100">
-          <span>Enter Quantity</span>
-          <input type="number" value="1" class="center_align bld900 qty num">
-          <button class="back_col col100 cart_btn bld cursor n_btn">ADD TO CART</button>
+          <div>
+            <span>Enter Quantity</span>
+          </div>
+          <div class="moblie_views">
+            <input type="number" value="1" class="center_align bld900 qty num">
+            <div>
+              <button class="back_col col100 cart_btn bld cursor n_btn">ADD TO CART</button>
+            </div>
+          </div>
         </div>
         <div class="add_to_cart">
           <button class="back_col col100 cart_btn bld cursor">ADD TO CART</button>
@@ -94,12 +100,16 @@
     <div class="info flex">
       <ul class="info_list font_color cursor">
         <li>Overview</li>
+        <div class="Overview_cont cont"></div>
         <li>Specifications</li>
+        <div class="Specifications_cont cont"></div>
         <li>Reviews(3)</li>
+        <div class="Reviews_cont cont"></div>
         <li>Product Q&A</li>
+        <div class="Product_cont cont"></div>
       </ul>
     </div>
-    <div class="info_content col100 flex column">
+    <div class="info_content col100 flex column Overview">
       <p class="overview_content col80 auto_margin">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dicta minus sunt! Omnis laboriosam quaerat,
         debitis, perferendis unde eum sequi atque eaque hic doloribus nam natus aut est! Iusto, sed. Lorem ipsum dolor
@@ -117,6 +127,39 @@
       </ul>
       </p>
     </div>
+    <div class="info_content col100 flex column Specifications">
+      <p class="overview_content col80 auto_margin">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dicta minus sunt! Omnis laboriosam quaerat,
+        debitis, perferendis unde eum sequi atque eaque hic doloribus nam natus aut est! Iusto, sed. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Atque, aliquid ea repudiandae, aperiam dolorem asperiores facilis tempore
+        laborum ducimus quod veritatis. Accusamus repudiandae modi perspiciatis quia. Eaque impedit ducimus facilis.
+
+      <ul class="col80 auto_margin content_list flex column">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dicta minus sunt! Omnis laboriosam quaerat,
+          debitis, perferendis unde eum sequi atque eaque hic doloribus nam natus aut est! Iusto, sed.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dicta minus sunt! Omnis laboriosam quaerat,
+          debitis, perferendis unde eum sequi atque eaque hic doloribus nam natus aut est! Iusto, sed.</li>
+      </ul>
+      </p>
+    </div>
+    <div class="info_content col100 flex column Reviews">
+      <p class="overview_content col80 auto_margin">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dicta minus sunt! Omnis laboriosam quaerat,
+        debitis, perferendis unde eum sequi atque eaque hic doloribus nam natus aut est! Iusto, sed. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Atque, aliquid ea repudiandae, aperiam dolorem asperiores facilis tempore
+        laborum ducimus quod veritatis. Accusamus repudiandae modi perspiciatis quia. Eaque impedit ducimus facilis.
+      </p>
+    </div>
+
+    <div class="info_content col100 flex column Product">
+      <p class="overview_content col80 auto_margin">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dicta minus sunt! Omnis laboriosam quaerat,
+        debitis, perferendis unde eum sequi atque eaque hic doloribus nam natus aut est! Iusto, sed. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+
+
     <div class="flex main_content auto_margin space_around">
     </div>
     <div class="detail flex col80 auto_margin space_around">
